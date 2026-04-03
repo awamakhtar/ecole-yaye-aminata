@@ -2,15 +2,19 @@ import { useState } from "react";
 import useReveal from "../hooks/useReveal";
 import { Sparkle } from 'lucide-react';
 
+import image1 from "../assets/image1.jpeg";
+import image2 from "../assets/image2.jpeg";
+import image3 from "../assets/image3.jpeg";
+
 const photos = [
-  { url: "/src/assets/image1.jpeg", label: "Salle de classe",category: "Académique",    tall: true  },
-  { url: "/src/assets/image2.jpeg", label: "Activités islamiques", category: "Islamique",     tall: true },
-  { url: "/src/assets/image3.jpeg", label: "Cours de lecture", category: "Académique",    tall: false },
-  { url: "/src/assets/image1.jpeg", label: "Activités parascolaires", category: "Parascolaire",  tall: true  },
-  { url: "/src/assets/image3.jpeg", label: "Sortie pédagogique",       category: "Parascolaire",  tall: true },
-  { url: "/src/assets/image3.jpeg", label: "Apprentissage en groupe",  category: "Académique",    tall: true },
-  { url: "/src/assets/image1.jpeg", label: "Lecture du Coran",         category: "Islamique",     tall: true  },
-  { url: "/src/assets/image2.jpeg", label: "Concours scolaire",        category: "Événements",    tall: false },
+  { url: image1, label: "Salle de classe", category: "Académique", tall: true },
+  { url: image2, label: "Activités islamiques", category: "Islamique", tall: true },
+  { url: image3, label: "Cours de lecture", category: "Académique", tall: false },
+  { url: image1, label: "Activités parascolaires", category: "Parascolaire", tall: true },
+  { url: image3, label: "Sortie pédagogique", category: "Parascolaire", tall: true },
+  { url: image3, label: "Apprentissage en groupe", category: "Académique", tall: true },
+  { url: image1, label: "Lecture du Coran", category: "Islamique", tall: true },
+  { url: image2, label: "Concours scolaire", category: "Événements", tall: false },
 ];
 
 const cats = ["Tous", "Académique", "Islamique", "Parascolaire", "Événements"];
